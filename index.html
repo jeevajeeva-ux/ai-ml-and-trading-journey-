@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>6-Month AI/ML & Trading Practice Roadmap</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 14mm 12mm 14mm 12mm;
+    }
+    * {
+      box-sizing: border-box;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #1e293b;
+      background-color: #ffffff;
+      line-height: 1.45;
+      font-size: 11pt;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      font-size: 18pt;
+      color: #0f172a;
+      margin: 0 0 4px 0;
+      font-weight: 800;
+    }
+    .subtitle {
+      font-size: 10pt;
+      color: #475569;
+      margin-bottom: 14px;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 8px;
+    }
+    h2 {
+      font-size: 12pt;
+      color: #0f172a;
+      margin: 16px 0 8px 0;
+      padding-left: 8px;
+      border-left: 4px solid #2563eb;
+      font-weight: 700;
+    }
+    h3 {
+      font-size: 10.5pt;
+      color: #1e293b;
+      margin: 10px 0 4px 0;
+      font-weight: 600;
+    }
+    p {
+      margin: 0 0 6px 0;
+      color: #334155;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+    .card {
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 10px 12px;
+      background-color: #f8fafc;
+      page-break-inside: avoid;
+    }
+    .card-title {
+      font-weight: 700;
+      color: #1d4ed8;
+      font-size: 10pt;
+      margin-bottom: 4px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .card-tag {
+      font-size: 8pt;
+      background: #e0e7ff;
+      color: #3730a3;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+    ul {
+      margin: 0 0 8px 0;
+      padding-left: 18px;
+    }
+    li {
+      margin-bottom: 3px;
+      color: #334155;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 8px 0 12px 0;
+      font-size: 9.5pt;
+      page-break-inside: avoid;
+    }
+    th, td {
+      border: 1px solid #cbd5e1;
+      padding: 6px 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f1f5f9;
+      color: #0f172a;
+      font-weight: 600;
+    }
+    .rule-box {
+      border-left: 4px solid #dc2626;
+      background-color: #fef2f2;
+      padding: 8px 12px;
+      border-radius: 0 6px 6px 0;
+      margin: 10px 0;
+      font-size: 9.5pt;
+      page-break-inside: avoid;
+    }
+    .highlight-box {
+      border-left: 4px solid #16a34a;
+      background-color: #f0fdf4;
+      padding: 8px 12px;
+      border-radius: 0 6px 6px 0;
+      margin: 10px 0;
+      font-size: 9.5pt;
+      page-break-inside: avoid;
+    }
+    .page-break {
+      page-break-before: always;
+    }
+    .footer {
+      margin-top: 14px;
+      text-align: center;
+      font-size: 8.5pt;
+      color: #64748b;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- PAGE 1: CORE STACK & LEARNING PLATFORMS -->
+  <h1>AI/ML & Systematic Trading: Hands-On Practice Directory</h1>
+  <div class="subtitle">
+    Tailored Practice Labs, Tools, and Workflows for the 6-Month Study Blueprint (PDF 1) | Zero Capital Edition
+  </div>
+
+  <div class="rule-box">
+    <strong>Core Operating Directive:</strong> Total real capital allocated across all 6 months = <strong>₹0</strong>[cite: 1, 2]. Trading practice is strictly restricted to chart observation, manual backtesting, and paper simulators[cite: 2, 41]. AI/ML career skills and college examinations take 100% priority over market study[cite: 2].
+  </div>
+
+  <h2>1. AI/ML Code Labs & Compute Setup</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="card-title">
+        <span>Local Workspace</span>
+        <span class="card-tag">Months 1–6</span>
+      </div>
+      <p><strong>Tools:</strong> VS Code, Python 3.11+, Git, virtualenv[cite: 4].</p>
+      <ul>
+        <li>Keep each project in a clean folder with <code>python -m venv env</code>[cite: 4].</li>
+        <li>Commit code daily to GitHub (e.g., <code>ai-ml-journey</code> repo)[cite: 4].</li>
+        <li>Use <strong>Thunder Client</strong> (VS Code extension) to test FastAPI endpoints locally[cite: 24].</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">
+        <span>GPU Acceleration Labs</span>
+        <span class="card-tag">Months 3–5</span>
+      </div>
+      <p><strong>Platforms:</strong> Google Colab, Kaggle Notebooks[cite: 19, 23].</p>
+      <ul>
+        <li>Free access to Nvidia T4 GPUs for training PyTorch networks and CNNs[cite: 19, 23].</li>
+        <li>Fine-tune DistilBERT and Hugging Face pipelines without heating your laptop[cite: 23, 26].</li>
+        <li>Export model weights (<code>.pt</code>, <code>.joblib</code>) to load locally[cite: 11, 19].</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>2. Interactive Practice, Drills & Datasets</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="card-title">
+        <span>Interactive Drills</span>
+        <span class="card-tag">Skill Building</span>
+      </div>
+      <ul>
+        <li><strong>Kaggle Learn:</strong> Complete short interactive tracks on <em>Pandas</em>, <em>Data Cleaning</em>, and <em>Intro to ML</em>[cite: 5, 41].</li>
+        <li><strong>LeetCode & NeetCode 75:</strong> Dedicate 45 minutes on 2–3 weekdays to Python array and string problems for placement screening readiness.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">
+        <span>Datasets & Benchmarks</span>
+        <span class="card-tag">Project Builds</span>
+      </div>
+      <ul>
+        <li><strong>Tabular:</strong> Kaggle Titanic[cite: 5], California Housing[cite: 11], Telco Customer Churn[cite: 16].</li>
+        <li><strong>Vision & NLP:</strong> Fashion-MNIST[cite: 19], CIFAR-10[cite: 23], SMS Spam/IMDb text[cite: 25].</li>
+        <li><strong>UCI ML Repository:</strong> Reliable CSVs for baseline classification benchmarks[cite: 16].</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>3. Conceptual Math & Architecture Primers</h2>
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 25%;">Resource</th>
+        <th style="width: 25%;">Platform</th>
+        <th>Where to Apply in the Roadmap</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>3Blue1Brown</strong>[cite: 41]</td>
+        <td>YouTube (Free)</td>
+        <td>Month 2 (Linear Algebra, Matrix transformations) and Month 3 (Neural network calculus)[cite: 10, 41].</td>
+      </tr>
+      <tr>
+        <td><strong>StatQuest (Josh Starmer)</strong>[cite: 41]</td>
+        <td>YouTube (Free)</td>
+        <td>Month 1 (CLT, p-values)[cite: 7] and Month 2 (Trees, Overfitting, ROC-AUC, Ridge/Lasso)[cite: 11, 12, 41].</td>
+      </tr>
+      <tr>
+        <td><strong>Andrej Karpathy</strong>[cite: 41]</td>
+        <td>YouTube (Free)</td>
+        <td>Month 3 (Building backpropagation and PyTorch forward passes from scratch)[cite: 15, 18, 41].</td>
+      </tr>
+      <tr>
+        <td><strong>Official Scikit-Learn Docs</strong>[cite: 41]</td>
+        <td>scikit-learn.org</td>
+        <td>Month 2 (Pipeline design, ColumnTransformer, and leakage prevention)[cite: 9, 11, 41].</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="footer">Page 1 of 2 — 6-Month Master Plan Practice Guide</div>
+
+  <!-- PAGE 2: TRADING LABS, SERVING & OPERATING SYSTEM -->
+  <div class="page-break"></div>
+
+  <h2>4. Market Analysis & Paper Trading Setup (₹0 Real Money)</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="card-title">
+        <span>Charting & Backtesting</span>
+        <span class="card-tag">TradingView</span>
+      </div>
+      <ul>
+        <li>Use <strong>TradingView Free</strong> to chart NSE stocks (e.g., <code>NSE:NIFTY</code>, <code>NSE:RELIANCE</code>)[cite: 41].</li>
+        <li>Use the <strong>Bar Replay tool</strong> for blind historical backtesting without lookahead bias[cite: 9, 13].</li>
+        <li>Set up 20/50 EMAs, RSI, and ATR for visual rule logging[cite: 9, 11, 12].</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">
+        <span>Virtual Execution & Ledger</span>
+        <span class="card-tag">Paper Simulator</span>
+      </div>
+      <ul>
+        <li>Activate <strong>TradingView Paper Trading</strong> in Month 4 to execute simulated orders with stops[cite: 22, 25].</li>
+        <li>Log every hypothetical setup in <strong>Google Sheets</strong> (Date, Symbol, Entry, Stop, R-multiple, Emotion)[cite: 13, 16].</li>
+        <li>Use <strong>Screener.in</strong> in Month 3 for 5-year balance sheet and P/L statement reviews[cite: 17, 41].</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>5. Serving, Vector Stores & Cloud Deployment Lab</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="card-title">
+        <span>Backend & Vector Engine</span>
+        <span class="card-tag">Months 4–5</span>
+      </div>
+      <ul>
+        <li><strong>FastAPI:</strong> Build asynchronous endpoints (<code>/predict</code>, <code>/ask</code>) with Pydantic validation[cite: 22, 24, 32].</li>
+        <li><strong>ChromaDB:</strong> Local, serverless vector database (<code>pip install chromadb</code>) for document embeddings[cite: 28, 30].</li>
+        <li><strong>PyMuPDF:</strong> Parse quarterly financial PDF reports to create structured document chunks[cite: 30, 36].</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">
+        <span>Container & Free Hosting</span>
+        <span class="card-tag">Months 5–6</span>
+      </div>
+      <ul>
+        <li><strong>Docker:</strong> Write single-stage Dockerfiles to containerize your ML APIs and RAG workflows[cite: 22, 25, 32].</li>
+        <li><strong>Hugging Face Spaces:</strong> Host public Streamlit/Gradio user interfaces at zero cost[cite: 32, 36].</li>
+        <li><strong>Render / Railway:</strong> Deploy your containerized FastAPI backend on free-tier compute[cite: 36].</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>6. Timetable Execution & "Lite Mode" Protocol</h2>
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 25%;">Block</th>
+        <th style="width: 20%;">Time Slot</th>
+        <th>Standard Evening Routine (Mon–Fri)[cite: 2]</th>
+        <th>Lite Mode (Exams / Busy Days)[cite: 2]</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>AI/ML Deep Study</strong>[cite: 2]</td>
+        <td>7:00 – 8:30 PM</td>
+        <td>Read concept, watch math breakdown, take handwritten notes[cite: 2].</td>
+        <td>Cover 1 single AI concept + 1 exercise (done by 8:30 PM)[cite: 2].</td>
+      </tr>
+      <tr>
+        <td><strong>Break</strong>[cite: 2]</td>
+        <td>8:30 – 8:40 PM</td>
+        <td>Water, walk, screen-off rest[cite: 2].</td>
+        <td>Wrap up or brief stretch[cite: 2].</td>
+      </tr>
+      <tr>
+        <td><strong>AI/ML Build Lab</strong>[cite: 2]</td>
+        <td>8:40 – 9:50 PM</td>
+        <td>Code practical task, write tests, commit to GitHub[cite: 2, 4].</td>
+        <td><strong>SKIPPED</strong> to protect study and college GPA[cite: 2].</td>
+      </tr>
+      <tr>
+        <td><strong>Break</strong>[cite: 2]</td>
+        <td>9:50 – 10:00 PM</td>
+        <td>Screen-off cognitive reset[cite: 2].</td>
+        <td><strong>SKIPPED</strong>[cite: 2].</td>
+      </tr>
+      <tr>
+        <td><strong>Trading & Journal</strong>[cite: 2]</td>
+        <td>10:00 – 11:00 PM</td>
+        <td>Annotate charts, run backtest row, update sheet[cite: 2, 4].</td>
+        <td>10–15 min market log only (finished by 9:00 PM)[cite: 2].</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="highlight-box">
+    <strong>Weekly Rhythm Check:</strong> Complete your weak-topic rebuilds on Saturday evening and run your timed closed-book assessment on Sunday[cite: 2]. If adherence drops below 70%, scale back secondary goals immediately rather than cramming[cite: 2, 8].
+  </div>
+
+  <div class="footer">Page 2 of 2 — 6-Month Master Plan Practice Guide</div>
+
+</body>
+</html>
